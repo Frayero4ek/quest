@@ -1,32 +1,64 @@
-head{
-    background-color: #8E88C1;
+body {  
+    background-color: #8780c2;
 }
 
-.conteiner-one{
-    background-color: #827EAC;
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-}
-
-.work-img{
+.work-img  {
     width: 200px;
     height: 200px;
-    margin-left: 40px;
     margin-top: 20px;
 }
 
-.p-coneteiner-make{
-    font-family:  "Roboto" , serif;
-    margin-left: 47px;
+.ready-img{
+    width: 180px;
+    height: 180px;
+    margin-top: 40px;
+}
+
+.p-coneteiner-make {
+    font-family: "Roboto", serif;
     margin-top: 35px;
 }
 
-.button-create{
-    margin-left: 80px;
+.p-coneteiner-ready{
+    font-family: "Roboto", serif;
+    margin-top: 35px;
+}
+
+.button-create , .button-join{
     margin-top: 15px;
     width: 130px;
     height: 40px;
     border-radius: 10px;
-    background-color: #6970b9  ;
+    background-color: #6970b9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.conteiner-one, .conteiner-two {
+    background-color: #6c66ad;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 100px;
+
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавний ефект */
+}
+
+/* Ефект підняття при наведенні */
+.conteiner-one:hover, .conteiner-two:hover {
+    transform: translateY(-10px); /* Піднімає контейнер вгору */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Додає тінь */
+}
+
+.conteiners {
+    display: flex;
+    gap: 120px; 
+    justify-content: center;  
 }
